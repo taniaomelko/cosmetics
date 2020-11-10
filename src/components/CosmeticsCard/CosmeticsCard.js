@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import './CosmeticsCard.css';
+import './CosmeticsCard.scss';
 
 export class CosmeticsCard extends React.Component {
   state = {
@@ -24,7 +24,7 @@ export class CosmeticsCard extends React.Component {
     }
 
     this.setState(prevState => (
-      { quantity: prevState.quantity + 1 }
+      { quantity: prevState.quantity - 1 }
     ));
   }
 
